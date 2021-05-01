@@ -16,44 +16,43 @@
     </style>
   </head>
   <body>
-  <h1>
+  <h1 align="center" data-localize="head">
+    COVID RESOURCE PAGE
   </h1>
     <div class="s008">
-      <form>
+      <form >
       <!--<input type="SUBMIT"/>-->
         <div class="inner-form">
           <div class="advance-search">
-            <span class="desc">Search resources</span>
+            <span class="desc" data-localize="title">Covid Help</span>
             <div class="row">
               <div class="input-field">
                 <div class="input-select">
                   <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="LANGUAGES" value="">Select language</option> 
                     <!-- Look into it -->
-                    <option>ENGLISH</option>
-                    <option><a href='/home/akki/covid_project/hindi.html'>HINDI</a></option>
-                    <option>TELUGU</option>
+                    <option>english</option>
+                    <option>हिंदी</option>
+                    <option>తెలుగు</option>
                   </select>
                 </div>
               </div>
               <script src="js/extention/choices.js"></script>
               <form method="post">
                 <div class="input-field">
-                  <div class="input-select">
+                  <div class="input-select" data-localize="city" id="city">
                     City
-                      <input type="text" name="name" id="city"/>
                   </div>
-                </div>
-                <div class="input-field">
+                  <input type="text" name="n1" id="n1"/>
                 </div>
               </form>
             </div>
-              <div class="row second">
+              <div class="row">
               <div class="input-field">
                 <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Resources required</option>
-                    <option>Remdesivir</option>
+                  <select data-trigger="" name="n2" data-localize="title2" >
+                    <option placeholder="" value="" >Resources required</option>
+                    <option data-localize="resources.remdesivir">Remdesivir</option>
                     <option>Hospital beds</option>
                     <option>Oxygen cylinders</option>
                     <option>Plasma</option>
@@ -65,11 +64,15 @@
               </div>
             <div class="row third">
               <div class="input-field">
-                <div class="result-count">
+                <div class="result-count" data-localize="wear">
                 <span>Wear</span>Masks</div>
-                <div class="group-btn">
-                  <button class="btn-delete" id="delete">Reset</button>
-                  <button class="btn-search"><a href="page.html">Search</a></button>
+                <div class="group-btn" >
+                  <button class="btn-delete" id="delete" data-localize="reset">Reset</button>
+                    <form  method="get" action="page.html">
+                      <button type="submit" class="btn-search" data-localize="search">
+                        Search
+                      </button>
+                    </form>
                 </div>
               </div>
             </div>
@@ -107,13 +110,20 @@
       }
       deleteBtn.addEventListener("click", function(e)
       {
-        e.preventDefault()
-        const deleteAll = document.querySelectorAll('.choices__button')
+        /* e.preventDefault()
+         const deleteAll = document.querySelectorAll('.choices__button')
         for (let i = 0; i < deleteAll.length; i++)
         {
           deleteAll[i].click();
-        }
+        } */
+        const deleteAll = form.querySelector('input[name="n1"]');
       });
     </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.localize.js"></script>
+    <script>
+      $('[data-localize]').localize("mylanguage",{language:"en"});
+    </script>
+
   </body>
 </html>

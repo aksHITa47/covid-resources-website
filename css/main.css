@@ -812,7 +812,7 @@ legend {
 }
 
 .s008 {
-  min-height: 83.3vh;
+  min-height: 82.5vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -889,7 +889,7 @@ legend {
 }
 
 .s008 form .inner-form .input-field .btn-delete:hover {
-  color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .s008 form .inner-form .basic-search {
@@ -948,10 +948,10 @@ legend {
 }
 
 .s008 form .inner-form .advance-search .row.second {
-  margin-bottom: 46px;
+  margin-bottom: 50px;
   left: 50%;
   right: auto;
-  transform: translate(35.7%, 0);
+  transform: translate(73%, 0);
 }
 
 .s008 form .inner-form .advance-search .row.third {
@@ -991,7 +991,7 @@ legend {
 }
 
 .s008 form .inner-form .advance-search .input-select {
-  height: 40px;
+  height: 40pxo
 }
 
 .s008 form .inner-form .advance-search .choices__inner {
@@ -1036,7 +1036,7 @@ legend {
   -ms-flex-align: center;
       align-items: center;
   height: 100%;
-  color: #fff;
+  color: #000;
 }
 
 .s008 form .inner-form .advance-search .choices__list.choices__list--dropdown {
