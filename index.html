@@ -8,13 +8,19 @@
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <style>
+      a:link, a:visited 
+      {
+      color: white;
+      }
+    </style>
   </head>
   <body>
   <h1>
   </h1>
     <div class="s008">
-      <form action="page.html">
-      <input type="SUBMIT"/>
+      <form>
+      <!--<input type="SUBMIT"/>-->
         <div class="inner-form">
           <div class="advance-search">
             <span class="desc">Search resources</span>
@@ -35,18 +41,13 @@
                 <div class="input-field">
                   <div class="input-select">
                     City
-                      <input type="text" name="name"/>
+                      <input type="text" name="name" id="city"/>
                   </div>
                 </div>
                 <div class="input-field">
-                  <div class="input-select">
-                    <br>
-                      <input type="reset" value="reset">
-                  </div>
                 </div>
               </form>
-
-            <br>
+            </div>
               <div class="row second">
               <div class="input-field">
                 <div class="input-select">
@@ -62,14 +63,13 @@
                 </div>
               </div>
               </div>
-              <br>
             <div class="row third">
               <div class="input-field">
                 <div class="result-count">
                 <span>Wear</span>Masks</div>
                 <div class="group-btn">
                   <button class="btn-delete" id="delete">Reset</button>
-                  <button class="btn-search">Search</button>
+                  <button class="btn-search"><a href="page.html">Search</a></button>
                 </div>
               </div>
             </div>
