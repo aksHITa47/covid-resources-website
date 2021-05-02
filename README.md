@@ -19,7 +19,7 @@ clicking the search button leads to a page which displays all the verified twitt
 
 ### Images: ###
 
-![screen shot from the website](/images/covid_page.png)
+![screen shot from the website](https://github.com/aksHITa47/covid-resources-website/blob/master/images/covid_page.png)
 
 ### Installation and running this project ###
  
