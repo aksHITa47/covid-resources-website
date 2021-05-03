@@ -8,16 +8,10 @@
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-    <style>
-      a:link, a:visited 
-      {
-      color: white;
-      }
-    </style>
   </head>
   <body>
   <h1 align="center" data-localize="head">
-    COVID RESOURCE PAGE
+    COVID RESOURCES PAGE
   </h1>
     <div class="s008">
       <form >
@@ -28,29 +22,32 @@
             <div class="row">
               <div class="input-field">
                 <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="LANGUAGES" value="">Select language</option> 
-                    <!-- Look into it -->
-                    <option>english</option>
-                    <option>हिंदी</option>
-                    <option>తెలుగు</option>
+                  <select name="language" id="language">
+                    <option value="" selected="selected">Select language</option>
+                    <!--<option placeholder="LANGUAGES" value="">Select language</option>
+                    < ! - - Look into it - - >
+                    <option value="english">English</option>
+                    <option value="hindi">हिंदी</option>
+                    <option value="telugu">తెలుగు</option>-->
                   </select>
                 </div>
               </div>
-              <script src="js/extention/choices.js"></script>
+              <!--<script src="js/extention/choices.js"></script>-->
 
               <div class="input-field">
-                <div class="input-select">
-                  <select data-trigger="" name="n2" data-localize="title2" >
-                    <option placeholder="" value="" >Resources required</option>
-                    <option data-localize="resources.remdesivir">Remdesivir</option>
-                    <option>Hospital beds</option>
-                    <option>Oxygen cylinders</option>
-                    <option>Plasma</option>
-                    <option>Fabiflu & Favipiravir</option>
-                    <option>ICU & ventilators</option>
-                  </select>
+                <div class="input-select" data-localize="title2">
+                  Resources Required
                 </div>
+                <select name="n2" id="n2">
+                    <option value="" selected="selected"></option>
+                    <!--<option placeholder="" value="resources" >Resources required</option>
+                    <option value="remdesivir">Remdesivir</option>
+                    <option value="beds">Hospital beds</option>
+                    <option value="cylinders">Oxygen cylinders</option>
+                    <option value="plasma">Plasma</option>
+                    <option value="fabiflu">Fabiflu & Favipiravir</option>
+                    <option value="icu">ICU & ventilators</option>-->
+                  </select>
               </div>
 
               <form method="post">
@@ -80,8 +77,47 @@
         </div>
       </form>
     </div>
-    <script src="js/extention/choices.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.localize.js"></script>
+  <script>
+      var resourcesObject = {
+        "English": ["Remdesivir", "Hospital beds", "Oxygen Cylinders", "Plasma", "Fabiflu & Favipiravir", "ICU & ventilators"],
+        "हिंदी": ["रेमेडीसविर", "अस्पताल के बिस्तर", "ऑक्सीजन सिलेंडर", "प्लाज्मा", "फैबिफ्लू और फेविपिरविर", "आईसीयू और वेंटिलेटर"],
+        "తెలుగు": ["రెమిడెసివిర్", "హాస్పిటల్ బెడ్", "ఆక్సిజన్ సిలిండర్లు", "ప్లాస్మా", "ఫాబిఫ్లు మరియు ఫావిపిరవిర్", "ఐసియు మరియు వెంటిలేటర్లు"]
+      }
+      window.onload = function(){
+        var langSel = document.getElementById("language");
+        var resourceSel = document.getElementById("n2");
+        for (var x in resourcesObject) {
+          langSel.options[langSel.options.length] = new Option(x, x);
+        }
+        langSel.onchange = function() {
+          if(this.value == "English") {
+            $('[data-localize]').localize("mylanguage",{language:"en"});
+          }
+          else if(this.value == "हिंदी") {
+            $('[data-localize]').localize("mylanguage",{language:"hi"});
+          }
+          else if(this.value == "తెలుగు") {
+            $('[data-localize]').localize("mylanguage",{language:"te"});
+          }
+           resourceSel.length = 1;
+            var z = resourcesObject[this.value];
+            for (var i = 0; i < z.length; i++) {
+              resourceSel.options[resourceSel.options.length] = new Option(z[i], z[i]);
+           }
+       }
+      }
+    </script>
+
     <script>
+      var lang = document.getElementById("language")
+      lang.onchange = function(){
+
+      }
+    </script><!--
+    <script src="js/extention/choices.js"></script>
+--> <script>
       const customSelects = document.querySelectorAll("select");
       const deleteBtn = document.getElementById('delete')
       const choices = new Choices('select',
@@ -119,11 +155,7 @@
         const deleteAll = form.querySelector('input[name="n1"]');
       });
     </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.localize.js"></script>
-    <script>
-      $('[data-localize]').localize("mylanguage",{language:"en"});
-    </script>
 
   </body>
 </html>
+
