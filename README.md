@@ -39,3 +39,5 @@ Run the file app.py to see the magic happen!
 4. HTML
 5. CSS
 6. Javascript
+
+P.S: The code for web application is in /twitter_scraper directory
