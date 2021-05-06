@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="585ffe47-dc37-47d0-bd26-2b1706eea950" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylanguage-hi.json" beforeDir="false" afterPath="$PROJECT_DIR$/mylanguage-hi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_scraper/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_scraper/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +76,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="147" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620016020770">
+    <state x="147" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620280567433">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="147" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1620016020770" />
+    <state x="147" y="43" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1620280567433" />
   </component>
 </project>
