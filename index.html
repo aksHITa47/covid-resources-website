@@ -79,7 +79,7 @@
 
               <form method="post">
                 <div class="input-field">
-                  <div class="input-select" data-localize="city" id="city">
+                  <div class="input-select" data-localize="city" id="city" required>
                     City
                   </div>
                   <input type="text" name="n1" id="n1">
@@ -320,7 +320,7 @@
       }
     </script><!--
     <script src="js/extention/choices.js"></script>
---> <script>
+--> <!--<script>
       const customSelects = document.querySelectorAll("select");
       const deleteBtn = document.getElementById('delete')
       const choices = new Choices('select',
@@ -359,7 +359,7 @@
       });
       //element.required=true;
       //document.getElementById("n1").required=true;
-    </script>
+    </script>-->
     <script>$('.opt').click(function(){
   $('#button').html($(this).val());
 });</script>
