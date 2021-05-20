@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="585ffe47-dc37-47d0-bd26-2b1706eea950" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter_scraper/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_scraper/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylanguage-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/mylanguage-en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylanguage-hi.json" beforeDir="false" afterPath="$PROJECT_DIR$/mylanguage-hi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylanguage-te.json" beforeDir="false" afterPath="$PROJECT_DIR$/mylanguage-te.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

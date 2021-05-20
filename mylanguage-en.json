@@ -2,7 +2,13 @@
   "head": "COVID RESOURCES PAGE",
  "title": "Covid Help",
  "city": "City",
-
+"title2": "REQUIRED RESOURCE",
+ "oxygen": "OXYGEN CYLINDERS",
+ "rem": "REMDESIVIR",
+ "beds": "HOSPITAL BEDS",
+ "fabiflu": "FABIFLU & FAVIPIRAVIR",
+ "blood": "BLOOD",
+ "icu": "ICU & Ventilators",
  "wear": "Wear Masks",
  "reset": "Reset",
   "search": "Search"
