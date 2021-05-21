@@ -4,11 +4,11 @@
  "city": "City",
 "title2": "REQUIRED RESOURCE",
  "oxygen": "OXYGEN CYLINDERS",
- "rem": "REMDESIVIR",
+ "rem": "AMPHOTERICIN",
  "beds": "HOSPITAL BEDS",
  "fabiflu": "FABIFLU & FAVIPIRAVIR",
  "blood": "BLOOD",
- "icu": "ICU & Ventilators",
+ "icu": "ICU & VENTILATORS",
  "wear": "Wear Masks",
  "reset": "Reset",
   "search": "Search"
