@@ -830,7 +830,8 @@ legend {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: linear-gradient(to right, #3C3B3F, #605C3C);
+  background-image: linear-gradient(to right, #0083B0, #00B4DB);
+  /*background-color: #6577B3;*/
   background-size: cover;
   padding: 15px;
   font-family: 'Roboto', sans-serif;
@@ -870,7 +871,7 @@ legend {
   min-width: 100px;
   height: 40px;
   padding: 0 15px;
-  background: #605C3C;
+  background: rgb(64, 67, 68);
   white-space: nowrap;
   border-radius: 3px;
   font-size: 14px;
@@ -1149,24 +1150,25 @@ footer {
   text-align: center;
   padding: 8px;
   font-size: 10px;
-  background-image: linear-gradient(to right, #3C3B3F, #605C3C);
+  background-image: linear-gradient(to right, #0083B0, #00B4DB);
+  /*background-color: #6577B3;*/
   color: black;
 }
 
 a:link {
-  color: green;
+  color: #FFC107;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #ddbea9;
+  color: #FFC107;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #cb997e;
+  color: rgba(7, 111, 246, 0.267);
   background-color: transparent;
   text-decoration: underline;
 }

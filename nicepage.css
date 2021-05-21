@@ -26454,7 +26454,7 @@ a.u-button-style.u-button-style.active>.u-active-palette-1-base[class*="u-border
 li.active>a.u-button-style.u-button-style.u-active-palette-1-base,
 li.active>a.u-button-style.u-button-style.u-active-palette-1-base[class*="u-border-"] {
   color: #ffffff !important;
-  background-color: #0cbcf5 !important;
+  background-color: #555555 !important;
 }
 
 a.u-link.u-hover-palette-1-base:hover {
